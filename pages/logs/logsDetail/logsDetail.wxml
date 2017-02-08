@@ -1,0 +1,20 @@
+<view class="contain">
+    <view class="detail-index">
+        <view class="log-title">
+            <text>{{detailData.dailyTitle}}</text>
+        </view>
+        <view class="log-content">
+            <text>{{detailData.dailyContent}}</text>
+        </view>
+        <view class="log-foot">
+            <text>{{detailData.dailyAddress}}</text>
+            <view class="time">
+                <icon type="waiting_circle" size="15" color="#000"/>
+                <text style="margin-left:5px;">{{detailData.dailyCreateTime}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="btn-area">
+    <button class="opera-btn" type="warn" bindtap="operateShow">操作</button>
+</view>

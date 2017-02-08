@@ -1,0 +1,28 @@
+<view class="contain">
+    <view class="manage-index">
+        <view class="manage-header">
+            <text class="index-date">今天({{today}})</text>
+            <text class="index-price"> + ￥{{countdata.todayAcount}}</text>
+            <text class="index-count">共{{countdata.todayCount}}笔</text>
+            <text class="index-sanjiao"></text>
+        </view>
+        <view class="manage-item">
+	      <view class="item-r">
+	         <view>本周</view>
+	      </view>
+	      <view class="item-l">
+	         <view>￥{{countdata.weekAcount}}</view>
+	         <view>共{{countdata.weekCount}}笔</view>
+	      </view>
+	   </view>
+        <view class="manage-item item2">
+            <view class="item-r">
+	         <view>本月</view>
+	      </view>
+	      <view class="item-l">
+	         <view>￥{{countdata.monthAcount}}</view>
+	         <view>共{{countdata.monthCount}}笔</view>
+	      </view>
+        </view>
+    </view>
+</view>

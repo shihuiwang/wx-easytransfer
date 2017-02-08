@@ -1,0 +1,23 @@
+<view class="contain">
+    <view class="title">
+        <text>出库发货记录</text>
+    </view>
+    <view class="details">
+        <text>状态</text><text class="itemr">已出库/已发货</text>
+        <text>出库编号</text><text class="itemr">{{storageInfo.billCode}}</text>
+        <text>出库时间</text><text class="itemr">{{storageInfo.createTime}}</text>
+        <text>发货单号</text><text class="itemr">{{deliverInfo.deliverCode}}</text>
+        <text>发货日期</text><text class="itemr">{{deliverInfo.deliverTime}}</text>
+        <text>物流信息</text><text class="itemr">{{deliverInfo.logisticsCompany}}</text>
+    </view>
+    <view class="oparet" style="border:none" bindtap="showList">
+        <text>商品清单</text>
+        <text class="{{arrowIcon}}"><text></text></text>
+    </view>
+    <view class="goods-list" hidden="{{listHidden}}" wx:for="{{goodsList}}" wx:for-item="item">
+        <text>{{item.goodVO.goodsName}}</text>
+        <view class="between">
+            <text>{{item.goodVO.goodsCode}}</text><text>{{item.account}} {{item.goodVO.unitVO.unitName}}</text> 
+        </view>
+    </view>
+</view>

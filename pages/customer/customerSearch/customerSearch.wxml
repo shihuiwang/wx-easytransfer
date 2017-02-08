@@ -1,0 +1,37 @@
+<view class="contain">
+    <form bindsubmit="formSubmit">
+    	<view class="search-group">
+            <icon type="search" size="20" color="#32485c"/>
+            <input name="data" focus="{{autoFocus}}" placeholder="输入客户名称" value="{{searchVal}}"/>
+            <button formType="submit" class="search-btn">查询</button>
+        </view>
+    </form>
+    <scroll-view class="custom-index" scroll-y="true" bindscrolltolower="lower">
+        <view class="item-group">
+	         <view class="resultcon" wx:for="{{joininList}}" wx:for-item="item" >
+                  <view class="blockface" data-call-number="{{item.contactPhone}}" data-sales-id="{{item.salesId}}" 
+                  bindtap="getDetail"></view>
+	              <view class="item-top">
+	                   <text class="item-title">{{item.salesVO.companyName}}</text>
+	                   <text class="item-level">{{item.joinInLevelVO.levelName?item.joinInLevelVO.levelName:'加盟经销商'}}</text>
+	               </view>
+	               <view class="item-address">{{item.salesVO.province}}{{item.salesVO.city}}{{item.salesVO.address}}</view>
+                   <view class="item-contact">
+                        <text>联系人:{{item.contactName}}</text>
+                        <text>联系方式: {{item.contactPhone}}</text>
+                   </view>
+	        </view>
+         </view>
+        <view class="history" hidden="{{hiddenHistory || orderList.orderList.length}}">
+            <view class="his-title">
+                <text>历史搜索</text>
+                <icon type="cancel" size="20" color="#32485c" bindtap="clearHistory"/>
+            </view>
+            <view class="his-body">
+            <block wx:for="{{hisData}}" wx:for-item="his">
+                <text data-name="{{his.data}}" bindtap="isHistorySearch">{{his.data}}</text>
+            </block>
+            </view>
+         </view>
+    </scroll-view>
+</view>

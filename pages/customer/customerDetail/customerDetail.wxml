@@ -1,0 +1,38 @@
+<view class="contain">
+    <view class="detail-index">
+        <view class="base-info">
+            <text>客户名称</text> <text class="itemr" bindtap="editName" data-companyName="{{joinInVO.salesVO.companyName}}">{{joinInVO.salesVO.companyName}}</text>
+            <text>客户级别</text> <text class="itemr">{{joinInVO.userLevelName}}</text>
+            <text>归属区域</text> <text class="itemr">{{joinInVO.areaVO.areaName}}</text>
+            <text>公司地址</text> <text class="itemr">{{joinInVO.salesVO.province}}{{joinInVO.salesVO.city}}{{joinInVO.salesVO.address}}
+            </text>
+            <text>开通账户</text> <text class="itemr">已开通</text>
+        </view>
+        <view>
+            <text style="padding-left:15px">联系人名片</text>
+        </view>
+        <view class="conact-card">
+            <text>{{joinInVO.contactName}}</text> <text class="itemr">{{joinInVO.salesVO.contactPost}}</text>
+            <text>手机</text> <text class="itemr">{{joinInVO.contactPhone}}</text>
+            <text>Email</text> <text class="itemr">{{joinInVO.contactEmail}}</text>
+            <text>QQ</text> <text class="itemr">{{joinInVO.salesVO.contactQQ}}</text>
+        </view>
+        <view class="invoices-bar" bindtap="invoicesInfoShow">
+            <text>发票信息</text>
+            <text class="itemr {{invoicesArrow}}"><text></text></text>
+        </view>
+        <view class="invoices-info" hidden="{{invoicesHidden}}">
+            <text>纳税号</text> <text class="itemr">{{joinInVO.salesVO.taxesRemark}}</text>
+            <text>发票抬头</text> <text class="itemr">{{joinInVO.salesVO.invoiceTitle}}</text>
+        </view>
+        <view class="other-bar" bindtap="otherInfoShow">
+            <text>附加信息</text>
+            <text class="itemr {{otherArrow}}"><text></text></text>
+        </view>
+        <view class="other-info" hidden="{{otherHidden}}">
+            <text>公司电话</text> <text class="itemr">{{joinInVO.salesVO.phone}}</text>
+            <text>公司传真</text> <text class="itemr">{{joinInVO.salesVO.tax}}</text>
+            <text>物流编码</text> <text class="itemr">{{joinInVO.salesVO.zipCode}}</text>
+        </view>
+    </view>
+</view>

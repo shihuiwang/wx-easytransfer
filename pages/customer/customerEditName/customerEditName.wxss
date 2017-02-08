@@ -1,0 +1,29 @@
+/* pages/customer/customerEdit/customerEdit.wxss */
+.contain{
+    padding: 15px;
+}
+.input-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+.input-box button{
+    height: 30px;
+    width: 56px;
+    font-size: 14px;
+    margin: 0;
+    line-height: 30px;
+    background: #e74c3c;
+    color: #fff;
+    padding: 0;
+    
+}
+.tips{
+    display: block;
+    font-size: 12px;
+    opacity: .8;
+    margin-top: 15px;
+}

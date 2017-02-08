@@ -1,0 +1,56 @@
+/* pages/customer/customerDetail/customerDetail.wxss */
+.contain{
+    padding: 15px;
+    width: auto;
+    height: auto;
+    font-family: SimHei;
+    font-size: 14px;
+}
+.itemr{
+    text-align: right;
+}
+.base-info, .conact-card, .invoices-info, .other-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.base-info{
+    border-bottom: none;
+    border-top: 1px solid #ccc;
+}
+.conact-card{
+    border-top: 1px solid #ccc;
+}
+.base-info>text, .conact-card>text,
+.invoices-info>text, .other-info>text{
+    width: 30%;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.base-info>.itemr, .conact-card>.itemr, 
+.invoices-info>.itemr, .other-info>.itemr{
+    width: 70%;
+}
+.invoices-bar, .other-bar{
+    padding: 10px;
+    background: #09cb96;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.other-bar{
+    background: #04c7cd;
+}
+.invoices-bar text, .other-bar text{
+    display: inline-block;
+    width: 50%;
+}
+.arrowIcon-r text, .arrowIcon-d text{
+    border-top: 2px solid rgba(255,255,255,1);
+    border-right: 2px solid rgba(255,255,255,1);
+}
+.conact-card>text, .invoices-info>text, .other-info>text{
+    border: none;
+    line-height: 25px;
+}

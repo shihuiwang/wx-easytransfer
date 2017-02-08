@@ -1,0 +1,27 @@
+/* pages/user/companyInfo/companyInfo.wxss */
+page{
+    background: #EFEFEF;
+}
+.contain{
+    padding: 15px;
+    font-size: 14px;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.item>text{
+    width: 27%;
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.item>.itemr{
+    width: 73%;
+}
+.company-tips{
+    color: rgba(0,0,0,.7);
+}

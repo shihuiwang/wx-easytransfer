@@ -1,0 +1,22 @@
+<!--logs.wxml-->
+<view class="contain">
+    <view class="search-group" bindtap="getSearch">
+        <icon type="search" size="20" color="#32485c"/>
+        <text>日志查询</text>
+    </view>
+    <view class="add-bar">
+          <text>全部日志 <text>{{logs.length}}/50</text></text>
+          <text class="itemr" bindtap="getAddLogs">
+              <text class="add-icon"></text>
+              <text>新增日志</text>
+          </text>
+    </view>
+    <scroll-view class="log-list" scroll-y="true" bindscrolltolower="lower">
+      <block wx:for="{{logs}}" wx:for-item="log">
+        <view class="logs" data-log-id="{{log.id}}" bindtap="getDetail">
+          <text data-log-id="{{log.id}}">{{log.dailyTitle}}</text>
+          <text data-log-id="{{log.id}}" class="log-item">{{log.dailyCreateTime}}</text>
+        </view>
+      </block>
+    </scroll-view>
+</view>

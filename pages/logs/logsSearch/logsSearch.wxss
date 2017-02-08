@@ -1,0 +1,46 @@
+/* pages/logs/logsSearch/logsSearch.wxss */
+@import "../logsIndex/logsIndex.wxss";
+.search-group{
+    margin-bottom: 15px;
+}
+.search-group input{
+    flex-grow: 1;
+    height: 35px;
+    padding: 0 8px;
+}
+.search-btn{
+    background: #e74c3c;
+    height: 32px;
+    width: 60px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.his-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+}
+.his-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.his-body text{
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}

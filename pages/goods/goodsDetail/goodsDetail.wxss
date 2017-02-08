@@ -1,0 +1,84 @@
+/* pages/goods/goodsDetail/goodsDetail.wxss */
+@import "../../../wxParse/wxParse.wxss";
+page{
+    background: #EFEFEF;
+}
+.contain{
+    padding-bottom: 50px;
+}
+swiper{
+    height: 500rpx;
+}
+.slide-image{
+    width: 100%;
+    height: 500rpx;
+}
+.goods-info, .goods-spec{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    background-color: #fff;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.goods-info{
+    margin-top: 0;
+}
+.spec-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.spec-list>text{
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    line-height: normal;
+}
+.operat-num{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+.operat-num>.btn{
+    background: #ccc;
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 24px;
+    color: #38434A;
+    font-weight: bold;
+}
+.operat-num>input{
+    border-bottom: 1px solid #ccc;
+    width: 100px;
+    text-align: center;
+}
+.stocks{
+    margin-left: 30px;
+}
+.dec{
+    font-size: 14px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 2px;
+}
+.itemr{
+    text-align: right;
+}
+.goods-dec, .goods-other{
+    padding: 5px 10px;
+    padding-right: 15px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.goods-dec text, .goods-other text{
+    display: inline-block;
+    width: 50%;
+    line-height: 30px;
+}
+.info-price{
+    color: #2BD0D5;
+}

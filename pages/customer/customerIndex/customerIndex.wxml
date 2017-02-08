@@ -1,0 +1,30 @@
+<view class="contain">
+    <view class="search-group" bindtap="getSearch">
+		<icon type="search" size="20" color="#32485c"/>
+		<text>客户查询</text>
+	</view>
+    <view class="add-bar">
+        <text>全部客户 <text>{{joininList.length}}/40</text></text>
+        <text class="itemr" bindtap="getAddCus">
+            <text class="add-icon"></text>
+            <text>新增客户</text>
+        </text>
+    </view>
+    <scroll-view class="custom-index" scroll-y="true" bindscrolltolower="lower">
+        <view class="item-group">
+	         <view class="resultcon" wx:for="{{joininList}}" wx:for-item="item" >
+                  <view class="blockface" data-call-number="{{item.contactPhone}}" data-sales-id="{{item.salesId}}" 
+                  bindtap="getDetail"></view>
+	              <view class="item-top">
+	                   <text class="item-title">{{item.salesVO.companyName}}</text>
+	                   <text class="item-level">{{item.joinInLevelVO.levelName?item.joinInLevelVO.levelName:'加盟经销商'}}</text>
+	               </view>
+	               <view class="item-address">{{item.salesVO.province}}{{item.salesVO.city}}{{item.salesVO.address}}</view>
+                   <view class="item-contact">
+                        <text>联系人:{{item.contactName}}</text>
+                        <text>联系方式: {{item.contactPhone}}</text>
+                   </view>
+	        </view>
+         </view>
+    </scroll-view>
+</view>

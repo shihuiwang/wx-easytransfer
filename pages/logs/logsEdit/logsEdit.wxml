@@ -1,0 +1,20 @@
+<form bindsubmit="formSubmit">
+    <view class="contain">
+            <view class="edit-title">
+                <text>标题:</text>
+                <input name="title" maxlength="50" value="{{logData.dailyTitle}}"/>
+            </view>
+            <view class="edit-address">
+                <text>地址:</text>
+                <input name="address" maxlength="50" value="{{logData.dailyAddress}}"/>
+            </view>
+            <view class="edit-address">
+                <text>内容:</text>
+                <textarea name="content" style="height:300px" maxlength="500" value="{{logData.dailyContent}}"/>
+            </view>
+        
+    </view>
+    <view class="btn-area">
+        <button class="opera-btn" type="warn" formType="submit" bindtap="operateShow">提交</button>
+    </view>
+</form>

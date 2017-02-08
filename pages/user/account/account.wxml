@@ -1,0 +1,16 @@
+<view class="contain">
+    <view class="uset-top">
+        <image class="info-img" src="{{userInfo.avatarUrl}}"></image>
+        <view class="info-name">
+            <text class="utop-title"></text>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <view class="account-item">
+        <text>姓名</text><text class="itemr">{{userInfo.nickName}}</text>
+        <text>职位</text><text class="itemr">暂无</text>
+        <text>手机</text><text class="itemr">13645678900</text>
+        <text>邮箱</text><text class="itemr">6234456@qq.com</text>
+        <text style="border:none">QQ</text><text class="itemr" style="border:none">623456</text>
+    </view>
+</view>

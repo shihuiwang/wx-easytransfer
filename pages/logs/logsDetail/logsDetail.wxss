@@ -1,0 +1,37 @@
+/* pages/logs/logsDetail/logsDetail.wxss */
+.contain{
+    font-size: 14px;
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+.log-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.log-title text{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.log-content{
+    line-height: 23px;
+    padding-bottom: 10px; 
+}
+.log-foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5px;
+}

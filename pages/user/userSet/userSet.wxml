@@ -1,0 +1,23 @@
+<view class="contain">
+    <view class="uset-top">
+        <image class="info-img" src="{{userInfo.avatarUrl}}"></image>
+        <view class="info-name">
+            <text class="utop-title">欢迎使用牧童管家系统</text>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <view class="uset-item">
+        <view class="item" bindtap="getOtherInfo" data-data="1">
+            <text data-data="1">我的账户</text>
+            <text data-data="1" class="arrowIcon-r"><text></text></text>
+        </view>
+        <view class="item" bindtap="getOtherInfo" data-data="2">
+            <text data-data="2">切换账户</text>
+            <text data-data="2" class="arrowIcon-r"><text></text></text>
+        </view>
+        <view class="item" style="border:none" bindtap="getOtherInfo" data-data="3">
+            <text data-data="3">公司信息</text>
+            <text data-data="3" class="arrowIcon-r"><text></text></text>
+        </view>
+    </view>
+</view>

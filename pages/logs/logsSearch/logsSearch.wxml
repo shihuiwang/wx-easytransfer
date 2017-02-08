@@ -1,0 +1,29 @@
+<!--logs.wxml-->
+<view class="contain">
+    <form bindsubmit="formSubmit">
+    	<view class="search-group">
+            <icon type="search" size="20" color="#32485c"/>
+            <input name="data" focus="{{autoFocus}}" placeholder="输入订单号/用户名称" value="{{searchVal}}"/>
+            <button formType="submit" class="search-btn">查询</button>
+        </view>
+    </form>
+    <scroll-view class="log-list" scroll-y="true" bindscrolltolower="lower">
+      <block wx:for="{{logs}}" wx:for-item="log">
+        <view class="logs" data-log-id="{{log.id}}" bindtap="getDetail">
+          <text data-log-id="{{log.id}}">{{log.dailyTitle}}</text>
+          <text data-log-id="{{log.id}}" class="log-item">{{log.dailyCreateTime}}</text>
+        </view>
+      </block>
+        <view class="history" hidden="{{hiddenHistory || orderList.orderList.length}}">
+            <view class="his-title">
+                <text>历史搜索</text>
+                <icon type="cancel" size="20" color="#32485c" bindtap="clearHistory"/>
+            </view>
+            <view class="his-body">
+            <block wx:for="{{hisData}}" wx:for-item="his">
+                <text data-name="{{his.data}}" bindtap="isHistorySearch">{{his.data}}</text>
+            </block>
+            </view>
+         </view>
+    </scroll-view>
+</view>

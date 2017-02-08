@@ -1,0 +1,75 @@
+/* pages/customer/customerAdd/customerAdd.wxss */
+input{
+    border: 1px solid #C8C8DA;
+    padding: 0 5px;
+    margin-top: 5px;
+    height: 32px;
+}
+.contain{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.add-customer{
+    width: auto;
+    height:  100%;
+    padding: 0 15px;
+}
+.add-cus{
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.add-cus-company{
+    padding-top: 15px;
+}
+.required{
+    color: #e74c3c;
+}
+.btn-area1{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.btn-area1 button{
+    margin: 0;
+    margin-right: 20px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 选择省市区样式 */
+.picker-view, .select-city-area{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.addr-item {
+    line-height: 50px;
+    text-align: center;
+}
+.select-city-area{
+    width: 100%;
+    height: 300px;
+    background: #fff;
+}
+.confirm-choose{
+    padding: 10px 20px;
+    height: 15px;
+    margin: 15px;
+    background: #ddd;
+    border-radius: 2px;
+}
+.levelFace{
+    border: 1px solid #C8C8DA;
+    height: 32px;
+    margin-top: 5px;
+    line-height: 32px;
+    padding-left: 5px;
+}

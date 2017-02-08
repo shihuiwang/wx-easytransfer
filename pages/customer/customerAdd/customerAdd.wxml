@@ -1,0 +1,66 @@
+<view class="contain">
+    <scroll-view class="add-customer" scroll-y="{{!isShow}}">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="add-cus add-cus-company">
+                <text>客户企业名称<text class="required">*</text></text>
+                <input name="company" maxlength="50" placeholder="请输入客户企业名称"/>
+            </view>
+            <view class="add-cus add-cus-address">
+                <text bindtap="choosearea">企业地址</text>
+                <input bindfocus="choosearea" name="address" value="{{address}}" placeholder="请选择或者输入企业地址"/>
+                <input name="moreAddress" placeholder="填写补充详细地址"/>
+            </view>
+            <view class="add-cus add-cus-acount">
+                <text>登录账号<text class="required">*</text></text>
+                <input name="acount" maxlength="30" placeholder="请输入登录账且保存后无法修改"/>
+            </view>
+            <view class="add-cus add-cus-password">
+                <text>密码<text class="required">*</text></text>
+                <input name="password" maxlength="30" password="true" placeholder="请输入密码"/>
+            </view>
+            <view class="add-cus add-cus-password2">
+                <text>确认密码<text class="required">*</text></text>
+                <input name="password2" maxlength="30" password="true" placeholder="请确认密码"/>
+            </view>
+            <view class="add-cus add-cus-level">
+                <text>客户级别</text>
+                <picker name="level" mode="selector" range="{{levelList}}" range-key="levelName" bindchange="levelChange" 
+                value="{{levelList[levelIndex].levelId}}">
+                    <view class="levelFace">
+                        {{levelList[levelIndex].levelName}}
+                    </view>
+                </picker>
+            </view>
+            <view class="add-cus add-cus-name">
+                <text>联系人<text class="required">*</text></text>
+                <input name="name" maxlength="10" placeholder="请输入联系人姓名"/>
+            </view>
+            <view class="add-cus add-cus-phone">
+                <text>手机</text>
+                <input name="phone" type="number" maxlength="11" placeholder="请输入手机名"/>
+            </view>
+            <view class="add-cus add-cus-email">
+                <text>邮箱</text>
+                <input name="email" placeholder="请输入邮箱"/>
+            </view>
+            <view class="btn-area1">
+                <button formType="submit" type="warn">提交</button>
+                <button formType="reset" style="color:#000">取消</button>
+            </view>
+        </form>
+    </scroll-view>
+    <view wx:if="{{isShow}}" class="select-city-area"></view>
+    <picker-view wx:if="{{isShow}}" class="picker-view" indicator-style="height: 50px;" style="width: 100%; height: 300px;" 
+     value="{{value}}" bindchange="bindChange">
+        <picker-view-column>
+            <view wx:for="{{proviceData}}" class="addr-item">{{item.fullNameDot}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{cityData}}" class="addr-item">{{item.fullNameDot}}</view>
+        </picker-view-column>
+        <picker-view-column wx:if="{{showDistrict}}">
+            <view wx:for="{{districtData}}" class="addr-item">{{item.fullNameDot}}</view>
+        </picker-view-column>
+         <text class="confirm-choose" bindtap="confirmChoose">确定</text>
+    </picker-view>
+</view>

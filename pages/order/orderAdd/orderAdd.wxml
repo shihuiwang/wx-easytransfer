@@ -1,0 +1,28 @@
+<view class="contain">
+    <view class="add-index">
+        <view class="choose-cus">
+            <picker mode="selector" range="{{joininList}}" range-key="companyName" value="{{joininList[index].salesId}}"
+            bindchange="chooseCusChange">
+                <text>{{joininList[index].companyName || "点击选择客户"}}</text>
+            </picker>
+        </view>
+        <form bindsubmit="creatOrder">
+            <view class="goods-group" wx:for="{{goodsList}}" wx:for-item="item" wx:for-index="index">
+                <image mode="top" src="http://cn.bing.com/az/hprichbg/rb/MountOTemanu_ZH-CN10516512008_1920x1080.jpg"></image>
+                <view class="goods-dec">
+                    <text>{{item.goodsName}}</text>
+                    <text class="dec-money">￥{{item.mPrice}}</text>
+                </view>
+                <view class="goods-opera">
+                    <text bindtap="subNumber" data-index="{{index}}">-</text>
+                    <input data-index="{{index}}" bindinput="inputNumber" type="number" value="{{goodsNumber[index].val}}"/>
+                    <text bindtap="addNumber" data-index="{{index}}" class="btnr-add">+</text>
+                </view>
+            </view>
+            <view class="btn-area">
+                <text>总计: ￥ {{orderTotal}}</text>
+                <button disabled="{{!orderTotal}}" formType="submit">生成订单</button>
+            </view>
+        </form>
+    </view>
+</view>

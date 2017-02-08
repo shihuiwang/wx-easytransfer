@@ -1,0 +1,39 @@
+<view class="contain">
+    <form bindsubmit="formSubmit">
+    	<view class="search-group">
+            <icon type="search" size="20" color="#32485c"/>
+            <input name="data" focus="{{autoFocus}}" placeholder="输入订单号/用户名称" value="{{searchVal}}"/>
+            <button formType="submit" class="search-btn">查询</button>
+        </view>
+    </form>
+    <scroll-view class="order-index" scroll-y="true" bindscrolltolower="lower">
+        <view class="ordergroup" wx:for="{{orderList.orderList}}" wx:for-item="items">
+	          <view class="ordermonth">{{items.date}}</view>
+	                <view class="resultcon" wx:for="{{items.children}}" wx:for-item="item">
+						<div class="blockface" data-order-id="{{item.orderId}}" bindtap="getDetail"></div>
+	                      <view class="ordertop">
+	                          <text class="ordericon">订</text>
+	                          <text class="orderid">{{item.orderCode}}</text>
+	                          <view class="orderstatus" style="background:{{item.color}};">{{item.orderState}}</view>
+	                      </view>
+	                      <view class="order-cname">{{item.customName}}</view>
+                              <view class="order-price"><text>订单金额:</text><text>{{item.totalFee}}</text></view>
+                                <view class="order-confirmtime">
+								 <icon type="waiting_circle" size="10" color="#ccc"/>
+                                <text>{{item.createDate}}</text>
+                      </view>
+	            </view>
+         </view>
+         <view class="history" hidden="{{hiddenHistory || orderList.orderList.length}}">
+            <view class="his-title">
+                <text>历史搜索</text>
+                <icon type="cancel" size="20" color="#32485c" bindtap="clearHistory"/>
+            </view>
+            <view class="his-body">
+            <block wx:for="{{hisData}}" wx:for-item="his">
+                <text data-name="{{his.data}}" bindtap="isHistorySearch">{{his.data}}</text>
+            </block>
+            </view>
+         </view>
+    </scroll-view>
+</view>

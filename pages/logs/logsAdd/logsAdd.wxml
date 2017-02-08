@@ -1,0 +1,19 @@
+<form bindsubmit="formSubmit">
+    <view class="contain">
+            <view class="edit-title">
+                <text>标题:</text>
+                <input name="title" maxlength="50" placeholder="请输入日志标题"/>
+            </view>
+            <view class="edit-address">
+                <text>地址:</text>
+                <input name="address" maxlength="50" placeholder="请输入地址"/>
+            </view>
+            <view class="edit-address">
+                <text>内容:</text>
+                <textarea name="content" maxlength="500" style="height:300px" placeholder="请输入日志内容( 500字以内 )"/>
+            </view>
+    </view>
+    <view class="btn-area">
+        <button class="opera-btn" type="warn" formType="submit" bindtap="operateShow">提交</button>
+    </view>
+</form>

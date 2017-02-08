@@ -1,0 +1,16 @@
+<view>
+    <view class="order-goods-index" wx:for="{{goodslist}}" wx:for-item="item">
+        <text>商品名称</text>
+        <text class="itemr">{{item.goodVO.goodsName}}</text>
+        <text>商品价格</text>
+        <text class="itemr">￥ {{item.goodVO.mPrice}}</text>
+        <text>商品数量</text>
+        <text class="itemr">{{item.account}}{{item.goodVO.unitVO.unitName}}</text>
+        <text>小计</text>
+        <text class="itemr">￥ {{item.account*item.goodVO.mPrice}}</text>
+        <text>商品编号</text>
+        <text class="itemr">{{item.goodVO.goodsCode}}</text>
+        <text>备注</text>
+        <text class="itemr">{{item.remark?item.remark:'无备注'}}</text>
+    </view>
+</view>

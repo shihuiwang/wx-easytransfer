@@ -1,0 +1,68 @@
+{
+  "pages":[
+    "pages/goods/salesGoods/salesGoods",
+    "pages/manageIndex/manageIndex",
+    "pages/order/orderIndex/orderIndex",
+    "pages/order/orderDetail/orderDetail",
+    "pages/order/orderGoods/orderGoods",
+    "pages/order/orderAdd/orderAdd",
+    "pages/order/orderSearch/orderSearch",
+    "pages/order/orderDelivery/orderDelivery",
+    "pages/customer/customerIndex/customerIndex",
+    "pages/customer/customerDetail/customerDetail",
+    "pages/customer/customerAdd/customerAdd",
+    "pages/customer/customerSearch/customerSearch",
+    "pages/customer/customerEditName/customerEditName",
+    "pages/logs/logsIndex/logsIndex",
+    "pages/logs/logsDetail/logsDetail",
+    "pages/logs/logsAdd/logsAdd",
+    "pages/logs/logsEdit/logsEdit",
+    "pages/logs/logsSearch/logsSearch",
+    "pages/user/userSet/userSet",
+    "pages/user/account/account",
+    "pages/user/companyInfo/companyInfo",
+    "pages/goods/goodsSearch/goodsSearch",
+    "pages/goods/goodsDetail/goodsDetail",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#32485c",
+    "navigationBarTitleText": "牧童管家",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#999FAC",
+    "selectedColor": "#e74c3c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#999FAC",
+    "list": [{
+      "pagePath": "pages/manageIndex/manageIndex",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/homed.png"
+    },
+    {
+      "pagePath": "pages/order/orderIndex/orderIndex",
+      "text": "订单",
+      "iconPath": "images/order.png",
+      "selectedIconPath": "images/ordered.png"
+    },
+    {
+      "pagePath": "pages/customer/customerIndex/customerIndex",
+      "text": "客户",
+      "iconPath": "images/customer.png",
+      "selectedIconPath": "images/customered.png"
+    }, {
+      "pagePath": "pages/logs/logsIndex/logsIndex",
+      "text": "日志",
+      "iconPath": "images/log.png",
+      "selectedIconPath": "images/loged.png"
+    }, {
+      "pagePath": "pages/user/userSet/userSet",
+      "text": "设置",
+      "iconPath": "images/set.png",
+      "selectedIconPath": "images/seted.png"
+    }]
+  }
+}

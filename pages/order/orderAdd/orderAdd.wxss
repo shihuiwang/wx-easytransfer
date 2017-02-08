@@ -1,0 +1,91 @@
+/* pages/order/orderAdd/orderAdd.wxss */
+.contain{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    font-size: 14px;
+    padding-bottom:50px;
+}
+.choose-cus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.choose-cus text{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.goods-group{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.goods-dec{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.goods-opera{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 20px;
+}
+.goods-group image{
+    width: 70px;
+    height: 70px;
+}
+.goods-dec .dec-money{
+    margin-top: 30px;
+}
+.goods-opera input{
+    width: 40px;
+    height: 27px;
+    padding: 0 5px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.goods-opera text{
+    display: inline-block;
+    width: 28px;
+    height: 18px;
+    padding: 5px 0;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px 0 0 6px;
+    text-align: center;
+}
+ .goods-opera .btnr-add{
+     border-radius: 0 6px 6px 0;
+ }
+ .btn-area{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+     position: fixed;
+     bottom: 0;
+     border-top: 1px solid #ccc;
+     left: 0;
+     right: 0;
+     background: #fff;
+     z-index: 10;
+     padding: 0;
+ }
+ .btn-area button{
+     margin-right: 0;
+     margin-left: 100px;
+     border: none;
+     border-radius: 0;
+     color: #fff;
+     background: #e74c3c;
+ }

@@ -1,0 +1,62 @@
+/* pages/order/orderDetail/orderDetail.wxss */
+page{
+    
+    background: #EBEAEB;
+}
+.contain{
+    padding: 15px 15px 0px 15px;
+}
+.detail-index{
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+.detail-top, .item-money{
+    margin-bottom: 10px;
+}
+.detail-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 10px 15px;
+}
+.detail-top text{
+    width: 30%;
+    line-height: 25px;
+}
+.detail-top .top-itemr{
+    width: 70%;
+    text-align: right;
+}
+.item-money>view, .detail-item, .log-item, .remark-info{
+    padding: 5px 15px;
+    background: #fff;
+}
+.item-money text, .detail-item text{
+    display: inline-block;
+    width: 50%;
+    line-height: 25px;
+}
+.itemr{
+    text-align: right;
+}
+.detail-item{
+    margin-bottom: 10px;
+}
+.log-item{
+    border-bottom: 1px solid #EBEAEB
+}
+.remark-info{
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+.remark-info>.btn{
+    text-align: center;
+    color: #e74c3c;
+    line-height: 25px;
+}
+.remark-info>.info{
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 20px;
+}

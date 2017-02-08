@@ -1,0 +1,7 @@
+<view class="contain">
+    <view class="input-box">
+        <input maxlength="50" value="{{name}}" focus="true"/>
+        <button>保存</button>
+    </view>
+    <text class="tips">修改当前客户的名称，此名称只对你生效</text>
+</view>

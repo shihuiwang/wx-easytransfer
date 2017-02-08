@@ -1,0 +1,71 @@
+/* pages/manageIndex/manageIndex.wxss */
+.contain{
+    width: 100%;
+    height: 100%;
+    font-family: '黑体';
+}
+.manage-header{
+    position: relative;
+    margin-bottom: 23px;
+    background-color: #32485c;
+}
+.index-date{
+    width: 100%;
+    display: table;
+    padding: 15px 0px;
+    text-align: center;
+    color: #fff;
+}
+.index-price, .index-count{
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    padding: 3.5% 0px;
+}
+.index-sanjiao{
+    border: 15px solid #32485c;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    margin-left: -15px;
+}
+.manage-item{
+    padding: 7% 15px;
+    background-color: #97CE66;
+    width: 82%;
+    margin-left: 5%;
+    margin-top: 25px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+.item2{
+    background-color: rgb(0, 191, 243);
+}
+.item-r{
+    position: relative;
+    width: 40%;
+    text-align: left;
+    padding: 5px 0px;
+    display: inline-block;
+    float: left;
+}
+.item-l{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    padding: 5px;
+    text-align: right;
+}
+.item-r view, .item-l view{
+    color: #fff;
+    padding-left: 10px;
+    font-size: 17px;
+    padding: 5px 0px;
+    margin: 0px;
+}

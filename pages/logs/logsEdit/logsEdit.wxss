@@ -1,0 +1,18 @@
+/* pages/logs/logsEdit/logsEdit.wxss */
+.contain{
+    padding: 30rpx;
+    font-size: 14px;
+}
+input{
+    border: 1px solid #C8C8DA;
+    padding: 0 5px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    height: 32px;
+}
+textarea{
+    border: 1px solid #C8C8DA;
+    padding: 0 5px;
+    width: 668rpx;
+    margin-top: 8px;
+}

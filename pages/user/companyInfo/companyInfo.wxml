@@ -1,0 +1,22 @@
+<view class="contain">
+    <view class="item">
+        <text class="company-tips">基本信息</text><text class="itemr"></text>
+        <text>公司名称</text><text class="itemr">小明生物科技有限公司广州分公司</text>
+        <text>行业类别</text><text class="itemr">暂无信息</text>
+        <text>所在地区</text><text class="itemr">暂无信息</text>
+        <text>详细地址</text><text class="itemr">暂无信息</text>
+        <text>邮编</text><text class="itemr">暂无信息</text>
+        <text>电话</text><text class="itemr">暂无信息</text>
+        <text>传真</text><text class="itemr">暂无信息</text>
+        <text class="company-tips">银行账户</text><text class="itemr"></text>
+        <text>账户名称</text><text class="itemr">暂无信息</text>
+        <text>开户银行</text><text class="itemr">暂无信息</text>
+        <text>银行账号</text><text class="itemr">暂无信息</text>
+        <text class="company-tips">对外联系人</text><text class="itemr"></text>
+        <text>姓名</text><text class="itemr">王小明</text>
+        <text>职位</text><text class="itemr">暂无信息</text>
+        <text>手机</text><text class="itemr">13645678900</text>
+        <text>邮箱</text><text class="itemr">6234456@qq.com</text>
+        <text style="border:none">QQ</text><text class="itemr" style="border:none">623456</text>
+    </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="contain">
+	<view class="search-group" bindtap="getSearch">
+		<icon type="search" size="20" color="#32485c"/>
+		<text>商品查询</text>
+	</view>
+    <view class="all-goods-tips">全部商品 {{shopList.length}}/{{recordCount}}</view>
+    <scroll-view class="goods-index" scroll-y="true" bindscrolltolower="lower">
+        <block wx:for="{{shopList}}" wx:for-item="item">
+            <view class="index-box" bindtap="getDetail" data-item="{{item}}">
+                <image class="info-img" src="{{userInfo.avatarUrl || defaultImg}}" data-item="{{item}}"></image>
+                <view class="info-name" data-item="{{item}}">
+                    <text class="title" data-item="{{item}}">{{item.goodsName}}</text>
+                    <text class="price" data-item="{{item}}">￥ {{item.mPrice}}</text>
+                </view>
+                <image class="cart" src="../../../images/mifa.png" bindtap="showCart"></image>
+            </view>
+        </block>
+    </scroll-view>
+</view>
+<image class="scan" src="../../../images/scan.png" bindtap="tapscan"></image>
+<modal class="modal" hidden="{{showCart}}" title="加入购物车" bindconfirm="cartConfirm" bindcancel="cartCancel">
+    <view class="cart-top">重量</view>
+    <view class="cart-spec">400-500g</view>
+    <view class="cart-num">
+        <text class="cart-num-top">数量</text>
+        <text class="btn" bindtap="cutNum">-</text>
+        <input bindblur="inMoneyBlur" value="{{cartNumber}}" bindinput="numInput" type="number"/>
+        <text class="btn" bindtap="addNum">+</text>
+    </view>
+</modal>

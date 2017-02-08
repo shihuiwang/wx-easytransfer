@@ -1,0 +1,112 @@
+/* pages/order/orderIndex/orderIndex.wxss */
+.contain{
+  height: 100%;
+  width: 100%;
+}
+.order-index{
+    height: 87%;
+    font-size: 14px;
+}
+.ordergroup {
+    position: relative;
+    width: 87%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.resultcon {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: -2px;
+    margin-bottom: 13px;
+    background-color: #fff;
+    padding: 10px 7px;
+    border-top: 3px solid #e74c3c;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.ordermonth {
+    margin-left: -2px;
+    background-color: rgb(231, 76, 60);
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    z-index: 99;
+    padding: 3px;
+}
+.blockface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.ordertop {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: table;
+    padding: 5px 0px 5px 0px;
+}
+.ordertop div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.ordertop .ordericon {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+    background-color: #32485c;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.ordertop .orderid {
+    width: 55%;
+    font-size: 16px;
+    color: #38434a;
+    padding: 0px 5px;
+    work-break: break-work;
+}
+.ordertop .orderstatus {
+    font-size: 14px;
+    color: #fff;
+    width: 37%;
+    float: right;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 3px 5px;
+    text-align: center;
+}
+.order-price {
+    width: 100%;
+    padding: 5px 0;
+}
+.order-cname, .order-price, .order-confirmtime {
+    color: rgb(56, 67, 74);
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 5px 0px;
+}
+.order-confirmtime {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    padding: 0;
+    font-size: 12px;
+    color: #ccc;
+}
+.status-orderconfirm {
+    background-color: #8460a8;
+}
