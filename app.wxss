@@ -112,3 +112,40 @@ page{
     font-size:14px;
     font-weight: bold;
 }
+
+/**模拟底部导航条( 经销商端 )**/
+
+.footer{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    font-size: 12px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 25%;
+}
+.footer image{
+    width: 25px;
+    height: 25px;
+    margin: 6px 0;
+    align-self: center;
+}
+.footer-item>text{
+    margin-bottom: 6px;
+    color: #999FAC;
+    align-self: center;
+}
+.footer-item .active{
+    color: #e74c3c;
+}

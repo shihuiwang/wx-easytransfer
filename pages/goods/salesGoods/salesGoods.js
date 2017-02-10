@@ -141,4 +141,19 @@ Page({
       }
     })
   },
+  getOrder: function() {
+    wx.redirectTo({
+      url: "/pages/corder/orderIndex/orderIndex"
+    })
+  },
+  getCart: function() {
+    wx.redirectTo({
+      url: "/pages/cart/cartIndex/cart"
+    })
+  },
+  getSet: function() {
+    wx.redirectTo({
+      url: "/pages/cuser/userSet/userSet"
+    })
+  },
 })

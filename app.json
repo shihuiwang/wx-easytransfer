@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/goods/salesGoods/salesGoods",
     "pages/manageIndex/manageIndex",
     "pages/order/orderIndex/orderIndex",
     "pages/order/orderDetail/orderDetail",
@@ -21,8 +20,12 @@
     "pages/user/userSet/userSet",
     "pages/user/account/account",
     "pages/user/companyInfo/companyInfo",
+    "pages/goods/salesGoods/salesGoods",
     "pages/goods/goodsSearch/goodsSearch",
     "pages/goods/goodsDetail/goodsDetail",
+    "pages/corder/orderIndex/orderIndex",
+    "pages/cuser/userSet/userSet",
+    "pages/cart/cartIndex/cart",
     "pages/index/index"
   ],
   "window":{

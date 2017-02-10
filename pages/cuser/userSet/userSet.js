@@ -22,12 +22,10 @@ Page({
       if(data == 2){
         wx.showModal({
           title: '切换账户',
-          content: '体验版，点击确定切换到经销商客户端',
+          content: '体验版，暂无操作效果',
           success: function(res) {
             if(res.confirm){
-              wx.navigateTo({
-                url: "/pages/goods/salesGoods/salesGoods"
-              })
+              
             }
           }
         });
@@ -37,5 +35,20 @@ Page({
           url: "/pages/user/companyInfo/companyInfo"
         })
       }
-  }
+  },
+  getGoods: function() {
+      wx.redirectTo({
+          url: "/pages/goods/salesGoods/salesGoods"
+      })
+  },
+  getOrder: function() {
+    wx.redirectTo({
+      url: "/pages/corder/orderIndex/orderIndex"
+    })
+  },
+  getCart: function() {
+    wx.redirectTo({
+      url: "/pages/cart/cartIndex/cart"
+    })
+  },
 })

@@ -1,0 +1,50 @@
+<view class="contain">
+	<view class="search-group" bindtap="getSearch">
+		<icon type="search" size="20" color="#32485c"/>
+		<text>订单查询</text>
+	</view>
+	<view class="add-bar">
+        <text>全部订单 <text>{{orderNumber}}/70</text></text>
+        <text class="itemr" bindtap="getAddOrder">
+            <text class="add-icon"></text>
+            <text>新增订单</text>
+        </text>
+    </view>
+    <scroll-view class="order-index" scroll-y="true" bindscrolltolower="lower">
+        <view class="ordergroup" wx:for="{{orderList.orderList}}" wx:for-item="items">
+	          <view class="ordermonth">{{items.date}}</view>
+	                <view class="resultcon" wx:for="{{items.children}}" wx:for-item="item">
+						<div class="blockface" data-order-id="{{item.orderId}}" bindtap="getDetail"></div>
+	                      <view class="ordertop">
+	                          <text class="ordericon">订</text>
+	                          <text class="orderid">{{item.orderCode}}</text>
+	                          <view class="orderstatus" style="background:{{item.color}};">{{item.orderState}}</view>
+	                      </view>
+	                      <view class="order-cname">{{item.customName}}</view>
+                              <view class="order-price"><text>订单金额:</text><text>{{item.totalFee}}</text></view>
+                                <view class="order-confirmtime">
+								 <icon type="waiting_circle" size="10" color="#ccc"/>
+                                <text>{{item.createDate}}</text>
+                      </view>
+	            </view>
+         </view>
+    </scroll-view>
+</view>
+<view class="footer">
+    <view class="footer-item" bindtap="getGoods">
+        <image src="../../../images/goods.png"></image>
+        <text>商品</text>
+    </view>
+    <view class="footer-item">
+        <image src="../../../images/ordered.png"></image>
+        <text class="active">订单</text>
+    </view>
+    <view class="footer-item" bindtap="getCart">
+        <image src="../../../images/cart.png"></image>
+        <text>购物车</text>
+    </view>
+    <view class="footer-item" bindtap="getSet">
+        <image src="../../../images/set.png"></image>
+        <text>设置</text>
+    </view>
+</view>

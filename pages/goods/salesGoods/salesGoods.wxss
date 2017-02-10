@@ -9,7 +9,7 @@
     height: 128rpx;
 }
 .goods-index{
-    height: 89%;
+    height: 80%;
 }
 .index-box{
     display: flex;

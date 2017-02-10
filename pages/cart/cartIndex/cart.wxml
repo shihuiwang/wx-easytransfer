@@ -1,0 +1,32 @@
+<view class="contain">
+    <view class="index-box">
+       <image class="info-img" src="{{userInfo.avatarUrl || defaultImg}}" data-item="{{item}}"></image>
+       <view class="info-name" data-item="{{item}}">
+            <text class="title" data-item="{{item}}">123{{item.goodsName}}</text>
+            <text class="price" data-item="{{item}}">￥ 123{{item.mPrice}}</text>
+        </view>
+    </view>
+    <view class="operat-num">
+        <text>删除</text>
+        <text>n 盒</text>
+    </view>
+</view>
+
+<view class="footer">
+    <view class="footer-item" bindtap="getGoods">
+        <image src="../../../images/goods.png"></image>
+        <text>商品</text>
+    </view>
+    <view class="footer-item" bindtap="getOrder">
+        <image src="../../../images/order.png"></image>
+        <text>订单</text>
+    </view>
+    <view class="footer-item"> 
+        <image src="../../../images/carted.png"></image>
+        <text class="active">购物车</text>
+    </view>
+    <view class="footer-item" bindtap="getSet">
+        <image src="../../../images/set.png"></image>
+        <text>设置</text>
+    </view>
+</view>

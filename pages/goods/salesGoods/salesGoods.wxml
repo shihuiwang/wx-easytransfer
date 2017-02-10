@@ -28,3 +28,21 @@
         <text class="btn" bindtap="addNum">+</text>
     </view>
 </modal>
+<view class="footer">
+    <view class="footer-item">
+        <image src="../../../images/goodsed.png"></image>
+        <text class="active">商品</text>
+    </view>
+    <view class="footer-item" bindtap="getOrder">
+        <image src="../../../images/order.png"></image>
+        <text>订单</text>
+    </view>
+    <view class="footer-item" bindtap="getCart">
+        <image src="../../../images/cart.png"></image>
+        <text>购物车</text>
+    </view>
+    <view class="footer-item" bindtap="getSet">
+        <image src="../../../images/set.png"></image>
+        <text>设置</text>
+    </view>
+</view>

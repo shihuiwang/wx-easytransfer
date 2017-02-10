@@ -1,0 +1,44 @@
+/* pages/cart/cartIndex/cart.wxss */
+page{
+    background: #EFEFEF;
+}
+.contain{
+    padding: 15px 15px 60px 15px;
+    font-size: 14px;
+    height: 90%;
+}
+.info-img{
+    width: 128rpx;
+    height: 128rpx;
+}
+.index-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.title{
+    font-size: 16px;
+    margin-bottom: 40rpx;
+}
+.info-name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+.price{
+    color: #09CB96;
+}
+.operat-num{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
